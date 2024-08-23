@@ -1,0 +1,29 @@
+import os
+from datasets import Dataset
+
+def load_custom_data(image_dir, text_dir):
+    data_files = []
+    # 确保每个图像文件都有对应的文本文件
+    for img_filename in os.listdir(image_dir):
+        if img_filename.endswith(".jpg"):
+            base_filename = os.path.splitext(img_filename)[0]
+            text_filename = f"{base_filename}.txt"
+            
+            # 检查文本文件是否存在
+            if os.path.exists(os.path.join(text_dir, text_filename)):
+                data_files.append({
+                    'image': os.path.join(image_dir, img_filename),
+                    'text': os.path.join(text_dir, text_filename)
+                })
+    return data_files
+
+# 调用函数加载数据
+image_dir = 'path_to_img_folder'
+text_dir = 'path_to_text_folder'
+data_files = load_custom_data(image_dir, text_dir)
+
+# 创建一个datasets.Dataset对象
+dataset = Dataset.from_dict({'data': data_files})
+
+# 查看数据集
+print(dataset)
