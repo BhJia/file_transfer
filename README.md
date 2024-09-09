@@ -10,3 +10,8 @@ Steps:
    - Position (location within the frame, proximity to other objects).
    - Actions (movements, interactions with the environment or other characters).
 4. Format your description as a prompt suitable for video editing, emphasizing the editing details.
+
+Example:
+- **Original Video**: A scene of a park with people walking and a fountain in the center.
+- **Edited Video**: The same scene with a dog running across the frame and a person sitting on the bench.
+- **Generated Prompt**: "Add a small brown dog running from the left side of the screen to the right, in front of the fountain. Add a person with a blue jacket sitting on the bench to the right of the fountain, facing forward."
