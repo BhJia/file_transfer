@@ -15,3 +15,9 @@ Example:
 - **Original Video**: A scene of a park with people walking and a fountain in the center.
 - **Edited Video**: The same scene with a dog running across the frame and a person sitting on the bench.
 - **Generated Prompt**: "Add a small brown dog running from the left side of the screen to the right, in front of the fountain. Add a person with a blue jacket sitting on the bench to the right of the fountain, facing forward."
+
+Original Video: A beach scene with waves gently hitting the shore and a few people walking in the distance.
+
+Edited Video: The same beach scene, but now there is a kite flying in the sky and a child running along the shore holding the kite string.
+
+Generated Prompt: "Add a colorful kite flying high in the sky, moving gently with the wind. Add a child wearing a red shirt running along the shore, holding the kite string."
